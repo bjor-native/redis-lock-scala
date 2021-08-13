@@ -1,11 +1,12 @@
 # Project exclude paths
-/project/project/target/
-/project/target/
-/project/project/
-/project/.bloop/
-/.idea/
-/.bsp/
-/.vscode/
-/.metals/
+project/project/target/
+project/target/
+project/project/
+project/.bloop/
+.idea/
+.bsp/
+.vscode/
+.metals/
 .scalafmt.conf
-/target/
+target/
+.bloop/**

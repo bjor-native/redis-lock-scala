@@ -9,7 +9,8 @@ import scala.language.postfixOps
   */
 object RedisTool {
 
-  val RELEASE_SUCCESS: String = "1"
+  val RELEASE_SUCCESS = "1"
+  val SET_IF_NOT_EXIST = NX
 
   /** @ Param lock Key lock
     * @ Param requestId Request Identification
@@ -25,7 +26,7 @@ object RedisTool {
     CacheManager.redisClientPool.withClient(client => {
       //val redisKeyPrefix = CacheManager.getRedisKeyPrefix(isPersist)
       client.select(CacheManager.redisDBNum)
-      val result = client.set(lockKey, requestId, NX, expireTime)
+      val result = client.set(lockKey, requestId, SET_IF_NOT_EXIST, expireTime)
       var flag = false
       if (result) {
         flag = true
