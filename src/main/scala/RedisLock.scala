@@ -15,7 +15,7 @@ object RedisLock extends App {
         val client = new RedisClient("localhost", 6379)
         client.get("gate") match {
           case Some(value) => println(value)
-          case None => println("None")
+          case None        => println("None")
         }
         resMap = Map("code" -> 200, "msg" -> "success")
       } catch {
@@ -24,7 +24,10 @@ object RedisLock extends App {
           resMap = Map("code" -> 200101, "msg" -> "execution failure")
       }
     } else {
-      resMap = Map("code" -> 200102, "msg" -> "operation conflict, has been the first to be boarded by others.")
+      resMap = Map(
+        "code" -> 200102,
+        "msg" -> "operation conflict, has been the first to be boarded by others."
+      )
     }
     resMap
   }

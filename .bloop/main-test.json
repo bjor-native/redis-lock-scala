@@ -1,0 +1,280 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "main-test",
+        "directory": "/home/bjor/IdeaProjects/redis",
+        "workspaceDir": "/home/bjor/IdeaProjects/redis",
+        "sources": [
+            "/home/bjor/IdeaProjects/redis/src/test/scala",
+            "/home/bjor/IdeaProjects/redis/src/test/scala-2.13",
+            "/home/bjor/IdeaProjects/redis/src/test/scala-2",
+            "/home/bjor/IdeaProjects/redis/src/test/java",
+            "/home/bjor/IdeaProjects/redis/target/scala-2.13/src_managed/test"
+        ],
+        "dependencies": [
+            "main"
+        ],
+        "classpath": [
+            "/home/bjor/IdeaProjects/redis/.bloop/main/scala-2.13/classes",
+            "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.jar",
+            "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/net/debasishg/redisclient_2.13/3.30/redisclient_2.13-3.30.jar",
+            "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.32/slf4j-log4j12-1.7.32.jar",
+            "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar",
+            "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar",
+            "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0.jar",
+            "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar",
+            "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar"
+        ],
+        "out": "/home/bjor/IdeaProjects/redis/.bloop/main",
+        "classesDir": "/home/bjor/IdeaProjects/redis/.bloop/main/scala-2.13/test-classes",
+        "resources": [
+            "/home/bjor/IdeaProjects/redis/src/test/resources",
+            "/home/bjor/IdeaProjects/redis/target/scala-2.13/resource_managed/test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.6",
+            "options": [
+                
+            ],
+            "jars": [
+                "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.jar",
+                "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.jar",
+                "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.6/scala-reflect-2.13.6.jar",
+                "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.19.0/jline-3.19.0.jar",
+                "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar"
+            ],
+            "analysis": "/home/bjor/IdeaProjects/redis/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/java-8-openjdk-amd64/jre",
+                "options": [
+                    "-Duser.dir=/home/bjor/IdeaProjects/redis"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.debasishg",
+                    "name": "redisclient_2.13",
+                    "version": "3.30",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "redisclient_2.13",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/net/debasishg/redisclient_2.13/3.30/redisclient_2.13-3.30.jar"
+                        },
+                        {
+                            "name": "redisclient_2.13",
+                            "classifier": "sources",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/net/debasishg/redisclient_2.13/3.30/redisclient_2.13-3.30-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-log4j12",
+                    "version": "1.7.32",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-log4j12",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.32/slf4j-log4j12-1.7.32.jar"
+                        },
+                        {
+                            "name": "slf4j-log4j12",
+                            "classifier": "sources",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.32/slf4j-log4j12-1.7.32-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-core",
+                    "version": "2.14.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "log4j-core",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar"
+                        },
+                        {
+                            "name": "log4j-core",
+                            "classifier": "sources",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-api",
+                    "version": "2.14.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "log4j-api",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar"
+                        },
+                        {
+                            "name": "log4j-api",
+                            "classifier": "sources",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-pool2",
+                    "version": "2.8.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-pool2",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0.jar"
+                        },
+                        {
+                            "name": "commons-pool2",
+                            "classifier": "sources",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.32",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "log4j",
+                    "name": "log4j",
+                    "version": "1.2.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "log4j",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar"
+                        },
+                        {
+                            "name": "log4j",
+                            "classifier": "sources",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.6",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/bjor/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
