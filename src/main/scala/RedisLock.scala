@@ -4,6 +4,7 @@ import utils.RedisTool
 import scala.language.postfixOps
 
 object RedisLock extends App {
+
   def updateTableInfo(): Map[String, Any] = {
     var resMap = Map[String, Any]()
     val lockKey = "lock"
@@ -13,9 +14,9 @@ object RedisLock extends App {
       try {
         // Perform your operations
         val client = new RedisClient("localhost", 6379)
-        client.get("gate") match {
+        client.hmget("gate") match {
           case Some(value) => println(value)
-          case None        => println("None")
+          case None => println("None")
         }
         resMap = Map("code" -> 200, "msg" -> "success")
       } catch {
@@ -30,5 +31,12 @@ object RedisLock extends App {
       )
     }
     resMap
+  }
+
+  var i = 0
+  while (i < 100) {
+    println(updateTableInfo())
+    i += 1
+    Thread.sleep(200)
   }
 }
